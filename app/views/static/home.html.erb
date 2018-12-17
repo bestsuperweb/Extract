@@ -1,0 +1,13 @@
+<h1>List All Users</h1>
+
+<%= link_to "Export users as spreadsheet", export_path(format: "xlsx") %>
+
+<p>
+	<% @users.each do |user| %>
+		First Name: <%= user.first %><br>
+		Last Name: <%= user.last %><br>
+		Email: <%= user.email %><br>
+		Phone: <%= user.phone %><br>
+		<br><br>
+	<% end %>
+</p>
