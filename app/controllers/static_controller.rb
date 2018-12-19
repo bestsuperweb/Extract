@@ -46,7 +46,7 @@ class StaticController < ApplicationController
 			# contents.gsub!(/[().-\s+]/, '')
 			phone = extract_phonenumber_to_array(contents)
 		end
-		return [ email, phone]
+		return [ email, phone ]
 	end
 
 	def extract_emails_to_array(txt)
